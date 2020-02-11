@@ -7,14 +7,9 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet} from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-
-import Icon from 'react-native-vector-icons/FontAwesome';
 import SplashScreen from 'react-native-splash-screen';
-
-import TabNavigation from './navigation/TabNavigation';
+import MainNavigation from './navigation/MainNavigation';
+import {StatusBar} from 'react-native';
 
 class App extends Component {
   componentDidMount() {
@@ -25,10 +20,13 @@ class App extends Component {
   }
 
   render() {
-    return <TabNavigation />;
+    return (
+      <>
+        <StatusBar barStyle="light-content" />
+        <MainNavigation />
+      </>
+    );
   }
 }
-
-const styles = StyleSheet.create({});
 
 export default App;
