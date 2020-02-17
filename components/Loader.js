@@ -1,5 +1,5 @@
 import React from 'react';
-import {ActivityIndicator, View, StyleSheet} from 'react-native';
+import {ActivityIndicator} from 'react-native';
 import {TINT_COLOR, BG_COLOR} from '../constants/Colors';
 import styled from 'styled-components';
 
