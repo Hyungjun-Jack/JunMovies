@@ -26,8 +26,8 @@ export default class MoviesContainer extends React.Component {
       } = await movies.getNowPlaying());
 
       // console.log(upcoming, popular, nowPlaying);
-    } catch (error) {
-      console.log(error);
+    } catch (err) {
+      console.log(err);
       error = "Can't get Movies.";
     } finally {
       this.setState({loading: false, error, upcoming, popular, nowPlaying});
